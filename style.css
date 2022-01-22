@@ -1,0 +1,72 @@
+*{
+    padding:0;
+    margin:0;
+}
+:root{
+    --bgColor:rgb(240, 239, 239);
+    --chipColor:#adccd8;
+}
+body{
+    margin:1rem;
+}
+.input-field-and-enter-btn{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;
+}
+
+.container{
+    max-width: 60rem;
+    flex-basis: 40rem;
+    background-color: var(--bgColor);
+    margin:auto;
+    /* overflow-y: scroll; */
+    padding:0.5rem;
+    border-radius: 1rem;
+}
+.input-value{
+margin:0.5rem;
+border: transparent;
+background-color: var(--bgColor);
+border-bottom: 1px solid black;
+padding:0.2rem;
+outline: none;
+}
+.enter-btn{
+    padding:0.2rem 0.5rem;
+    border:1px solid black;
+    border-radius: 1rem;
+    font-weight: bolder;
+    background-color:#222324;
+    color:var(--chipColor);
+}
+.output{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap:0.5rem;
+}
+.chip-container{
+    display:flex;
+    flex-direction: row;
+    cursor: pointer;
+    opacity:60%;
+   
+}
+.chip-text{
+    background-color:var(--chipColor); 
+    width:fit-content;
+    padding: 8px 10px;
+    border-radius: 3rem;
+    font-weight: 300;
+}
+.chip-crossbutton{
+    font-size: 0.6rem;
+    color:white;
+    background-color:#838386 ;
+  padding:2px 4px;
+    border-radius: 1rem;
+    cursor: pointer;
+}

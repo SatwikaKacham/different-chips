@@ -5,11 +5,15 @@
 :root{
     --bgColor:rgb(240, 239, 239);
     --chipColor:#adccd8;
+    --primary:#ff3e6c;
+   --secoundary: #535665;
 }
 body{
     margin:1rem;
 }
-.input-field-and-enter-btn{
+
+/* chipss */
+.chip-input-field-and-enter-btn{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -17,7 +21,7 @@ body{
     margin:1rem;
 }
 
-.container{
+.chip-main-container{
     max-width: 60rem;
     flex-basis: 40rem;
     background-color: var(--bgColor);
@@ -26,7 +30,7 @@ body{
     padding:0.5rem;
     border-radius: 1rem;
 }
-.input-value{
+.chip-input-value{
 margin:0.5rem;
 border: transparent;
 background-color: var(--bgColor);
@@ -34,15 +38,15 @@ border-bottom: 1px solid black;
 padding:0.2rem;
 outline: none;
 }
-.enter-btn{
+.chip-enter-btn{
     padding:0.2rem 0.5rem;
-    border:1px solid black;
+    border:1px solid var(--primary);
     border-radius: 1rem;
     font-weight: bolder;
-    background-color:#222324;
-    color:var(--chipColor);
+    background-color:var(--primary);
+    color:black;
 }
-.output{
+.chip-output{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -52,11 +56,18 @@ outline: none;
     display:flex;
     flex-direction: row;
     cursor: pointer;
-    opacity:60%;
+    background-color: var(--primary);
+    border-radius: 5rem;
    
 }
+.chip-container:active{
+    opacity:200%;
+}
+.chip-input-value:focus{
+    border-bottom: 2px solid #ff3e6c;
+}
 .chip-text{
-    background-color:var(--chipColor); 
+
     width:fit-content;
     padding: 8px 10px;
     border-radius: 3rem;
@@ -70,3 +81,93 @@ outline: none;
     border-radius: 1rem;
     cursor: pointer;
 }
+
+
+/* chips */
+
+
+
+/* badge */
+
+
+.badge-container{
+    display:flex;
+    flex-direction: column;
+    justify-items:center ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    padding:1rem;
+    background-color: var(--bgColor);
+    border-radius: 1rem;
+    flex-basis: 40rem;
+    
+}
+.badge-text{
+    position :relative;
+    /* background-color: violet; */
+    padding:10px;
+    width:fit-content;
+    color:black;
+    display:flex;
+
+}
+
+.small-badge,
+.large-badge,
+.left-badge,
+.bottom-left-badge,
+.right-badge,
+.icon-badge{
+    position :absolute;
+    background-color:#ff3e6c;
+    width:fit-content;
+    top:0;
+    right:0;
+    font-size: 0.7rem;
+    color:white;
+    padding:0.1rem  0.3rem;
+    border-radius: 1rem;
+}
+
+.large-badge{
+    font-size: 1rem;
+    padding:0.1rem  0.4rem;
+    font-weight: bolder;
+}
+
+.left-badge{
+ right:2rem;
+}
+.bottom-left-badge
+{
+    right:2rem;
+    top:auto;
+    bottom: 0rem;
+}
+.icon-badge{
+    top: 0.2rem;
+    right:0.2rem;
+    /* padding:0.1rem  0.3rem; */
+}
+
+.badge-action-button,.icon{
+    padding:0.2rem;
+    margin:0 0 0 0.5rem;
+    border-radius: 0.3rem;
+    background-color: rgb(37, 82, 231);
+    color:white;
+    border:1px solid rgb(37, 82, 231);
+    cursor: pointer;
+    
+}
+.icon{
+    background-color:#25D366;
+    color:white;
+    border:1px solid white;
+    font-size: 2rem;
+    border-radius: 0.3rem;
+}
+
+/* badges */

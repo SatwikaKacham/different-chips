@@ -59,4 +59,23 @@ let hideFunction =()=>{
 
 // end badge component
 
+// Header
+let headerComponent3=document.querySelector('.header-component3')
+let headerAndContentContainer3=document.querySelector(".header-andcontent-container3");
+let headerTitle3=document.querySelector('.header-title3');
+let shortMaker=()=>{
+    if(headerAndContentContainer3.scrollTop>=2)
+    {
+    headerTitle3.style.display="none";
+    headerComponent3.classList.add("header-component2");
+    }
+    else{
+        headerTitle3.style.display="block";
+        headerComponent3.classList.remove("header-component2");
+    }
+    console.log(headerAndContentContainer3.scrollTop);
+}
 
+headerAndContentContainer3.addEventListener("scroll",shortMaker);
+
+  

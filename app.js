@@ -78,4 +78,14 @@ let shortMaker=()=>{
 
 headerAndContentContainer3.addEventListener("scroll",shortMaker);
 
-  
+  //done header
+
+  //drawer component
+
+
+  var drawerListItem =document.querySelectorAll(".drawer-list-item");
+console.log("yes");
+  drawerListItem.forEach((item)=>{
+      item.onclick=()=>{
+
+          item.classList.toggle("select");}});

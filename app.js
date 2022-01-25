@@ -83,9 +83,24 @@ headerAndContentContainer3.addEventListener("scroll",shortMaker);
   //drawer component
 
 
-  var drawerListItem =document.querySelectorAll(".drawer-list-item");
+  let drawerListItem =document.querySelectorAll(".drawer-list-item");
 console.log("yes");
   drawerListItem.forEach((item)=>{
       item.onclick=()=>{
 
           item.classList.toggle("select");}});
+
+
+
+//hide drawer
+let drawerToggleButton  =document.querySelector(".drawer-toggle-button");
+let drawerContainerPlus =document.querySelector(".drawer-container-plus");
+console.log( drawerToggleButton );
+drawerToggleButton.onclick=()=>{
+    drawerContainerPlus.classList.toggle("hide-drawer");
+
+}
+
+
+
+//drawer component done

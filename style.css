@@ -192,12 +192,15 @@ text-align: center;
 }
 
 .header-and-content-container{
-    height:10rem;
+    height:20rem;
     overflow-y: scroll;
+}
+.header-and-content-container i{
+    padding:0.3rem;
 }
 .header-and-content-container i:hover{
 background-color: #554448;
-padding:0.3rem;
+
 border-radius: 1rem;
 }
 .header-component{
@@ -261,18 +264,20 @@ border-radius: 1rem;
 /* Drawer component */
 .drawer-title{
     font-weight:bold;
+    font-size: 4rem;
+    text-decoration:wavy;
 }
 .drawer-container{
 display:flex;
 flex-direction: column;
 padding:1rem;
-
+margin-bottom:1rem;
 gap:1rem;
 color:var(--secoundary);
 width:fit-content;
 background-color:var(--bgColor);
-margin:1rem;
 border-radius: 0.3rem;
+min-width: 11rem;
 }
 .drawer-title{
     color:rgb(31, 29, 29);
@@ -318,3 +323,30 @@ border-radius: 0.3rem;
     color:var(--primary) ;
     border-radius: 0.3rem;
 }
+
+/* header and drawer component */
+.drawer-container1{
+border-radius: 0;
+}
+.Drawer-list1{
+height:14.5rem;
+overflow-y: scroll;
+min-width:7rem;
+
+}
+.drawer-and-header-container{
+    display:flex;
+    margin:1;
+   
+
+}
+
+.hide-drawer{
+    display:none;
+}
+
+/* done drawer component */
+
+
+
+

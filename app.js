@@ -104,3 +104,28 @@ drawerToggleButton.onclick=()=>{
 
 
 //drawer component done
+
+// snackbar component
+let snackbarBaselineButton  =document.querySelector(".snackbar-baseline-button");
+let snackbarStackedButton  =document.querySelector(".snackbar-stacked-button");
+let snackbarBaseline =document.querySelector(".snackbar-baseline");
+let snackbarStacked  =document.querySelector(".snackbar-stacked");
+let snackbarCrossButtonBaseline  =document.querySelector(".snackbar-baseline i");
+let snackbarCrossButtonStacked  =document.querySelector(".snackbar-stacked i");
+
+snackbarBaselineButton.onclick=()=>{
+    snackbarBaseline.style.display="flex"
+}
+
+snackbarCrossButtonBaseline.onclick=()=>{
+    snackbarBaseline.style.display="none"
+}
+
+snackbarStackedButton.onclick=()=>{
+    snackbarStacked.style.display="flex"
+}
+
+snackbarCrossButtonStacked .onclick=()=>{
+    snackbarStacked.style.display="none"
+}
+

@@ -192,7 +192,7 @@ text-align: center;
 }
 
 .header-and-content-container{
-    height:20rem;
+    height:18rem;
     overflow-y: scroll;
 }
 .header-and-content-container i{
@@ -329,7 +329,7 @@ min-width: 11rem;
 border-radius: 0;
 }
 .Drawer-list1{
-height:14.5rem;
+height:12.5rem;
 overflow-y: scroll;
 min-width:7rem;
 
@@ -351,9 +351,13 @@ min-width:7rem;
 display:flex;
 gap:10px;
 margin:1rem;
-position: relative;
+
 }
-.snackbar-baseline{
+.snackbar-parent{
+    position: relative;
+    height:5rem;
+}
+.snackbar-baseline,.snackbar-stacked{
 color:white;
 background-color: var(--secoundary);
 width:fit-content;
@@ -366,6 +370,13 @@ font-size: 1.3rem;
 border-radius: 0.5rem;
 position:absolute;
 bottom:0;
+}
+
+.snackbar-stacked{
+    left:40%;
+    flex-direction: column;
+    gap:0;
+    align-items: flex-end;
 }
 
 .snackbar-container-buttons button,
@@ -389,7 +400,7 @@ bottom:0;
 .snackbar-button:hover{
      background-color: #fdf6f8; 
 }
-.snackbar-baseline i{
+.snackbar-baseline i,.snackbar-stacked i{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -401,7 +412,7 @@ bottom:0;
     cursor: pointer;
 }
 
-.snackbar-baseline i:hover{
+.snackbar-baseline i:hover,.snackbar-stacked i:hover{
     background-color:#838385 ;
 }
 
@@ -409,4 +420,12 @@ bottom:0;
 display:flex;
 flex-direction: row;
 }
+
+/* .snackbar-button-and-icon2{
+    display:flex;
+flex-direction: row;
+align-content: flex-end;
+gap:0;
+} */
+
 

@@ -426,6 +426,8 @@ flex-direction: row;
 
 /*  done snackbar component */
 
+ /* dialog component */
+
 .dialog-component{
     display:flex;
     flex-direction: column;
@@ -490,3 +492,35 @@ font-size: 1.3rem;
 background-color:#e6e3e3 ;
 border-radius: 0.4rem;
 }
+
+
+ /* done dialog component */
+
+
+ .tab-component{
+     display:flex;
+     flex-direction: row;
+     font-size: 1.5rem;
+     border:2px solid #d7d8db;
+     margin-top: 2rem;
+     width:13.5rem;
+     overflow-x: scroll;
+     /* border-radius: 0.7rem 0.7rem 0 0; */
+     
+ }
+.tab-list{
+    display:flex;
+     flex-direction: row;
+}
+ .tab-list-item{
+     padding:2rem 1rem 0 1rem;
+     display:block;
+     cursor: pointer;
+     border:none;
+     font-size: 1.5rem;
+     background-color: white;
+ }
+ .tab-list-item:focus{
+     background-color: pink;
+     border-bottom: 3px solid var(--primary);
+ }

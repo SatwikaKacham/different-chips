@@ -347,6 +347,9 @@ min-width:7rem;
 
 /* done drawer component */
 
+
+
+/* snackbar component */
 .snackbar-container-buttons{
 display:flex;
 gap:10px;
@@ -421,11 +424,69 @@ display:flex;
 flex-direction: row;
 }
 
-/* .snackbar-button-and-icon2{
+/*  done snackbar component */
+
+.dialog-component{
     display:flex;
-flex-direction: row;
-align-content: flex-end;
-gap:0;
-} */
+    flex-direction: column;
+   border:1px solid #d7d8db;
+    width:12rem;
+    gap:8px;
+    padding:10px;
+    border-radius: 0.4rem;
+    box-shadow: 3px 2px 5px #d7d8db;
+}
+.dialog-heading{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
 
+.dialog-buttons{
+    display:flex;
+    flex-direction: row;
+    gap:5px;
+    margin-left:auto;
+}
+.dialog-buttons button:hover{
+background-color: #fdf6f8;
+}
+.dialog-buttons button{
+    padding:0.4rem;
+    color: var(--primary);
+    border: 1px solid white;
+    background-color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+}
 
+.dialog-content{
+    margin-top:1rem;
+    color:#535665;
+}
+.dialog-list{
+    display:flex;
+    flex-direction: column;
+    margin-top:1rem;
+    gap:8px;
+    
+}
+.dialog-list-item{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    padding:5px;
+}
+.dialog-image-icon{
+    height:2.5rem;
+    width:2.5rem;
+    border-radius: 2rem;
+}
+.dialog-icon-tag{
+font-size: 1.3rem;
+}
+.dialog-list-item:hover{
+background-color:#e6e3e3 ;
+border-radius: 0.4rem;
+}

@@ -119,6 +119,7 @@ snackbarBaselineButton.onclick=()=>{
 
 snackbarCrossButtonBaseline.onclick=()=>{
     snackbarBaseline.style.display="none"
+    snackbarBaseline.style.pointerEvents="none"
 }
 
 snackbarStackedButton.onclick=()=>{
@@ -129,3 +130,5 @@ snackbarCrossButtonStacked .onclick=()=>{
     snackbarStacked.style.display="none"
 }
 
+
+// done  snackbar component
